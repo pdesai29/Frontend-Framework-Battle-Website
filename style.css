@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+#root {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  margin: 17px;
+}
+
+.logo {
+  width: 60px;
+  height: 70px;
+  animation: circularMotion 20s linear infinite;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+  width: 100px;
+  height: 100px;
+}
+.logo.react {
+  animation-delay: 0s;
+}
+.react:hover {
+  filter: drop-shadow(0 0 2em #00d8ff);
+}
+
+.logo.alpine {
+  animation-delay: 0.5s;
+  width: 80px;
+  height: 80px;
+}
+.alpine:hover {
+  filter: drop-shadow(0 0 2em #fff);
+  width: 120px;
+  height: 120px;
+}
+.logo.angular {
+  animation-delay: 1s;
+  width: 80px;
+  height: 80px;
+}
+.angular:hover {
+  filter: drop-shadow(0 0 2em #c3002f);
+  width: 120px;
+  height: 120px;
+}
+
+.logo.js {
+  animation-delay: 1.5s;
+}
+.js:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.logo.lit {
+  animation-delay: 2s;
+}
+.lit:hover {
+  filter: drop-shadow(0 0 2em #5779ff);
+}
+.logo.preact {
+  animation-delay: 2.5s;
+}
+.preact:hover {
+  filter: drop-shadow(0 0 2em #663ab8);
+}
+.logo.qwik {
+  animation-delay: 3s;
+}
+.qwik:hover {
+  filter: drop-shadow(0 0 2em #646cff);
+}
+
+.logo.solid {
+  animation-delay: 3.5s;
+}
+.solid:hover {
+  filter: drop-shadow(0 0 2em rgb(52, 95, 158));
+}
+.logo.svelte {
+  animation-delay: 4s;
+}
+.svelte:hover {
+  filter: drop-shadow(0 0 2em #ff3e00);
+}
+.logo.vue {
+  animation-delay: 4.5s;
+}
+.vue:hover {
+  filter: drop-shadow(0 0 2em rgb(65, 184, 131));
+}
+@keyframes circularMotion {
+  0% {
+    transform: rotate(0deg) translateX(125px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(125px) rotate(-360deg);
+  }
+}
+.text {
+  position: fixed;
+  top: 90%;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
